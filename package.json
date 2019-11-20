@@ -1,7 +1,13 @@
 {
   "name": "soap-client-interface-generator",
+  "description": "A nice greeter",
+  "keywords": [
+    "soap",
+    "soap-client",
+    "code-gen",
+    "interface"
+  ],
   "version": "0.1.0",
-  "main": "index.js",
   "author": "ike",
   "license": "MIT",
   "scripts": {
@@ -9,6 +15,8 @@
     "format": "prettier --write \"*.ts\" \"*.js\"",
     "lint": "tslint -p tsconfig.json"
   },
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "dependencies": {
     "@types/bluebird": "^3.5.29",
     "soap": "^0.30.0"
