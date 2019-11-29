@@ -1,6 +1,6 @@
 {
   "name": "surfactant",
-  "description": "A nice greeter",
+  "description": "Generate soap client interface from wsdl",
   "keywords": [
     "soap",
     "soap-client",
@@ -8,7 +8,7 @@
     "interface"
   ],
   "version": "0.1.0",
-  "author": "ike",
+  "author": "ikewat",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
