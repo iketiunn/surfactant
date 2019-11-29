@@ -1,3 +1,3 @@
-## 🧼 soap-client-interface-generator
+## 🧼 surfactant
 
 Transforming soap describe into typescript interface

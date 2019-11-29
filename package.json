@@ -1,5 +1,5 @@
 {
-  "name": "soap-client-interface-generator",
+  "name": "surfactant",
   "description": "A nice greeter",
   "keywords": [
     "soap",
@@ -12,18 +12,20 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write \"*.ts\" \"*.js\"",
-    "lint": "tslint -p tsconfig.json"
+    "format": "prettier --write \"*.ts\"",
+    "lint": "tslint"
   },
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "bin": "dist/cli.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "dependencies": {
-    "@types/bluebird": "^3.5.29",
-    "soap": "^0.30.0"
+    "soap": "^0.30.0",
+    "prettier": "^1.19.1"
   },
   "devDependencies": {
+    "@types/bluebird": "^3.5.29",
+    "@types/prettier": "^1.19.0",
     "@types/node": "^12.12.8",
-    "prettier": "^1.19.1",
     "tslint": "^5.20.1",
     "tslint-config-prettier": "^1.18.0",
     "typescript": "^3.7.2"
