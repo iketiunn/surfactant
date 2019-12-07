@@ -39,6 +39,7 @@ function transRecursively(target: string | ObjectOrString) {
   return JSON.stringify(ret).replace(/"/g, "");
 }
 
+/** TODO: More complex type support */
 function transToJsType(_t: string): string {
   const [_, t] = _t.split(":");
   switch (t) {

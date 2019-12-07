@@ -1,10 +1,14 @@
 ## 🧼 surfactant
 
-Transforming soap describe into typescript interface
+Transforming soap describe into typescript interface.
 
-Usage
+If the result don't fit your needs, please fire an issue, thanks!
 
-```
+The detail return types was in https://github.com/vpulim/node-soap#clientmethodasyncargs---call-method-on-the-soap-service
+
+Basic Usage:
+
+```typescript
 $ npx surfactant ./calculator.wsdl > calculator.wsdl.ts
 // or
 $ npx surfactant 'http://www.dneonline.com/calculator.asmx?WSDL' > calculator.wsdl.ts
@@ -13,7 +17,7 @@ $ npx surfactant 'http://www.dneonline.com/calculator.asmx?WSDL' > calculator.ws
 import * as soap from 'soap'
 import { ClientAsync } from 'calculator.wsdl'
 (async () => {
-  const client = await soap.createClientAsync('http://www.dneonline.com/calculator.asmx?WSDL') as soap.client & ClientAsync;
+  const client = (await soap.createClientAsync('http://www.dneonline.com/calculator.asmx?WSDL')) as soap.client & ClientAsync;
   const [ret] = await client.AddAsync({ intA:1, intB:2 });
   console.log(ret) // { AddResult: 3 }
 })()
