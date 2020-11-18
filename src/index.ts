@@ -104,10 +104,12 @@ function genInterfaceObject(describe: { [k: string]: any }) {
 
 function genClientAsyncInterface(objects: InterfaceObject[]) {
   const functions = objects.map(obj => {
-    const arg = obj.input.length ? `arg: {${obj.input.join(";")}}` : "";
-    return `${obj.name}Async: (${arg}) => Promise<[{ ${obj.output.join(
-      ";"
-    )} }, string, string | undefined, string]>`;
+    const arg = obj.input.length
+      ? `arg: { ${obj.input.join(";")} }`
+      : "arg?: undefined";
+    const result = `{ ${obj.output.join(";")} }`;
+    return `${obj.name}Async: (${arg}, options?: object, extraHeaders?: object)
+      => Promise<[${result}, string, string | undefined, string]>`;
   });
   const clientInterface = `export interface ClientAsync {
   ${functions.join("\n  ")}
