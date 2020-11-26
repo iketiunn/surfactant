@@ -7,7 +7,7 @@ export async function genAsyncMethodInterface(
 ) {
   return soap
     .createClientAsync(url, options, endpoint)
-    .then(client => client.describe())
+    .then((client) => client.describe())
     .then(genInterfaceObject)
     .then(genClientAsyncInterface)
     .then(prettier);
@@ -77,7 +77,7 @@ function genInterfaceObject(describe: { [k: string]: any }) {
     const tmp: InterfaceObject = {
       name: mk,
       input: [],
-      output: []
+      output: [],
     };
     for (const k in m.input) {
       if (ignoreKeys.includes(k)) continue;
@@ -103,7 +103,7 @@ function genInterfaceObject(describe: { [k: string]: any }) {
 }
 
 function genClientAsyncInterface(objects: InterfaceObject[]) {
-  const functions = objects.map(obj => {
+  const functions = objects.map((obj) => {
     const arg = obj.input.length
       ? `arg: { ${obj.input.join(";")} }`
       : "arg?: undefined";
