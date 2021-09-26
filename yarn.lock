@@ -33,10 +33,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.27.tgz#4141fcad57c332a120591de883e26fe4bb14aaea"
   integrity sha512-qZdePUDSLAZRXXV234bLBEUM0nAQjoxbcSwp1rqSMUe1rZ47mwU6OjciR/JvF1Oo8mc0ys6GE0ks0HGgqAZoGg==
 
-"@types/prettier@^2.1.5":
-  version "2.1.5"
-  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.1.5.tgz#b6ab3bba29e16b821d84e09ecfaded462b816b00"
-  integrity sha512-UEyp8LwZ4Dg30kVU2Q3amHHyTn1jEdhCIE59ANed76GaT1Vp76DD3ZWSAxgCrw6wJ0TqeoBpqmfUHiUDPs//HQ==
+"@types/prettier@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@types/prettier/-/prettier-2.4.0.tgz#900b13362610ccd3570fb6eefb911a6732973d00"
+  integrity sha512-WHRsy5nMpjXfU9B0LqOqPT06EI2+8Xv5NERy0pLxJLbU98q7uhcGogQzfX+rXpU7S5mgHsLxHrLCufZcV/P8TQ==
 
 "@types/sax@^1.2.1":
   version "1.2.3"
@@ -295,10 +295,10 @@ path-parse@^1.0.6:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
 
-prettier@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.2.0.tgz#8a03c7777883b29b37fb2c4348c66a78e980418b"
-  integrity sha512-yYerpkvseM4iKD/BXLYUkQV5aKt4tQPqaGW6EsZjzyu0r7sVZZNPJW4Y8MyKmicp6t42XUPcBVA+H6sB3gqndw==
+prettier@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
+  integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
 
 resolve@^1.3.2:
   version "1.19.0"
