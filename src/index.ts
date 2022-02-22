@@ -93,7 +93,11 @@ function genInterfaceObject(describe: { [k: string]: any }) {
       if (ignoreKeys.includes(k)) continue;
 
       const type = transRecursively(m.output[k]);
-      tmp.output.push(`${k}: ${type}`);
+      if (k.includes("[]")) {
+        tmp.output.push(`${k.replace("[]", "")}: ${type}[]`);
+      } else {
+        tmp.output.push(`${k}: ${type}`);
+      }
     }
 
     ast.push(tmp);
