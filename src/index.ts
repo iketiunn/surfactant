@@ -9,8 +9,7 @@ export async function genAsyncMethodInterface(
     .createClientAsync(url, options, endpoint)
     .then((client) => client.describe())
     .then(genInterfaceObject)
-    .then(genClientAsyncInterface)
-    .then(prettier);
+    .then(genClientAsyncInterface);
 }
 
 interface ObjectOrString {
@@ -119,9 +118,4 @@ function genClientAsyncInterface(objects: InterfaceObject[]) {
   ${functions.join("\n  ")}
 }`;
   return clientInterface;
-}
-
-import { format } from "prettier";
-function prettier(src: string) {
-  return format(src, { parser: "typescript" });
 }
