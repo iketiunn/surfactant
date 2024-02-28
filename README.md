@@ -8,10 +8,13 @@ The detail return types was in https://github.com/vpulim/node-soap#clientmethoda
 
 Basic Usage:
 
-```typescript
+```sh
 $ npx surfactant ./calculator.wsdl > calculator.wsdl.ts
-// or
+# or
 $ npx surfactant 'http://www.dneonline.com/calculator.asmx?WSDL' > calculator.wsdl.ts
+
+# if you need prettify
+$ npx surfactant ./calculator.wsdl | npx prettier --parser typescript  > calculator.wsdl.ts
 
 // In your client code
 import * as soap from 'soap'
